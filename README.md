@@ -1,17 +1,19 @@
-# Carla-Object-Detection-Dataset
+# Carla-COCO-Object-Detection-Dataset
 
-**Labeled Dataset for Object Detection in Carla Simulator**
+**COCO-Style Labelled Dataset for Object Detection in Carla Simulator**
 
-This dataset contains 1028 images each 640x380 pixel. The dataset is split into 249 test and 779 training examples.
-Every image comes with an associated label .xml file in the pascal VOC format (`labels` folder), in the yolo format (`labels_yolo_format`) as well as annotations in the MS COCO format (`annotations` folder) as a json file. The dataset was collected in Carla Simulator, driving around in autopilot mode in various environments (Town01, Town02, Town03, Town04, Town05) and saving every x-th frame. The labels where then automatically generated using the semantic segmentation information.
-
-Please have a look at my other repository to train your custom yolov7 on this CARLA Object Detection Dataset: https://github.com/DanielHfnr/yolov7-carla-object-detection 
+This dataset contains 1028 images each 640x380 pixels.
+The dataset is split into 249 test and 779 training examples.
+Every image comes with an associated label .xml file in the pascal VOC format (`./labels/` folder).
+A MS COCO format of the dataset is available in the `./train.json` and `./test.json` files.
+The dataset was collected in Carla Simulator, driving around in autopilot mode in various environments (Town01, Town02, Town03, Town04, Town05) and saving every i-th frame.
+The labels where then automatically generated using the semantic segmentation information.
 
 **Available classes are:**
 
-* Vehicle (Car, Truck)
+* Automobile (Car, Truck)
 * Bike
-* Motobike
+* Motorbike
 * Traffic light
 * Traffic sign
 
@@ -19,13 +21,20 @@ Please have a look at my other repository to train your custom yolov7 on this CA
 
 ![example image](/images/train/Town01_011940.png "Example Image from Dataset")
 
+**Example annotated image:**
+
+![example image with annotations](Town01_011940_annotated.png "Example Annotated Image from Dataset")
+
 ## Changelog
 
-### 2023-01-06
+### 2023-11-29
 
 #### Changed
 
-* Restructured dataset
-  * Changed train/val/test split
-  * Changed folder structure
-* Added annotations in MS COCO format
+* Recreated dataset in monolythic MS COCO format
+  * Removed yolo format
+  * Updated README
+
+## Contributions
+This repo is a fork from [Carla-Object-Detection-Dataset](https://github.com/DanielHfnr/Carla-Object-Detection-Dataset).
+Acknowledgements are made to [DanielHfnr](https://github.com/DanielHfnr) for the original data collection and dataset preparation.
