@@ -1,0 +1,113 @@
+{
+    "description": "This dataset contains 1028 images each 640x380 pixels.\nThe dataset is split into 249 test and 779 training examples.\nEvery image comes with MS COCO format annotations.\nThe dataset was collected in Carla Simulator, driving around in autopilot mode in various environments\n(Town01, Town02, Town03, Town04, Town05) and saving every i-th frame.\nThe labels where then automatically generated using the semantic segmentation information.\n",
+    "citation": "",
+    "homepage": "https://github.com/yunusskeete/Carla-COCO-Object-Detection-Dataset",
+    "license": "MIT",
+    "features": {
+        "image_id": {
+            "dtype": "int64",
+            "id": null,
+            "_type": "Value"
+        },
+        "width": {
+            "dtype": "int32",
+            "id": null,
+            "_type": "Value"
+        },
+        "height": {
+            "dtype": "int32",
+            "id": null,
+            "_type": "Value"
+        },
+        "file_name": {
+            "dtype": "string",
+            "id": null,
+            "_type": "Value"
+        },
+        "url": {
+            "dtype": "string",
+            "id": null,
+            "_type": "Value"
+        },
+        "objects": {
+            "feature": {
+                "id": {
+                    "dtype": "int64",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "area": {
+                    "dtype": "int64",
+                    "id": null,
+                    "_type": "Value"
+                },
+                "bbox": {
+                    "feature": {
+                        "dtype": "float32",
+                        "id": null,
+                        "_type": "Value"
+                    },
+                    "length": 4,
+                    "id": null,
+                    "_type": "Sequence"
+                },
+                "category": {
+                    "num_classes": 5,
+                    "names": [
+                        "automobile",
+                        "bike",
+                        "motorbike",
+                        "traffic_light",
+                        "traffic_sign"
+                    ],
+                    "names_file": null,
+                    "id": null,
+                    "_type": "ClassLabel"
+                }
+            }
+        }
+    },
+    "post_processed": null,
+    "supervised_keys": null,
+    "task_templates": null,
+    "builder_name": "carla-coco-object-detection-dataset",
+    "dataset_name": "carla-coco-object-detection-dataset",
+    "config_name": "default",
+    "version": {
+        "version_str": "1.1.0",
+        "description": null,
+        "major": 1,
+        "minor": 1,
+        "patch": 0
+    },
+    "splits": {
+        "train": {
+            "name": "train",
+            "num_bytes": 231554,
+            "num_examples": 779,
+            "shard_lengths": null,
+            "dataset_name": "carla-coco-object-detection-dataset"
+        },
+        "test": {
+            "name": "test",
+            "num_bytes": 114645,
+            "num_examples": 249,
+            "shard_lengths": null,
+            "dataset_name": "carla-coco-object-detection-dataset"
+        }
+    },
+    "download_checksums": {
+        "https://github.com/yunusskeete/Carla-COCO-Object-Detection-Dataset/raw/master/train.tar.gz": {
+            "num_bytes": 27893,
+            "checksum": null
+        },
+        "https://github.com/yunusskeete/Carla-COCO-Object-Detection-Dataset/raw/master/test.tar.gz": {
+            "num_bytes": 14913,
+            "checksum": null
+        }
+    },
+    "download_size": 42806,
+    "post_processing_size": null,
+    "dataset_size": 346199,
+    "size_in_bytes": 389005
+}

@@ -1,1 +1,4 @@
 venv
+ignore
+Carla-COCO-Object-Detection-Dataset/train/train_images.tar.gz
+Carla-COCO-Object-Detection-Dataset/test/test_images.tar.gz
