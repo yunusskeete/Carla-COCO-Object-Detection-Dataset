@@ -1,5 +1,5 @@
 {
-    "description": "This dataset contains 1028 images each 640x380 pixels.\nThe dataset is split into 249 test and 779 training examples.\nEvery image comes with MS COCO format annotations.\nThe dataset was collected in Carla Simulator, driving around in autopilot mode in various environments\n(Town01, Town02, Town03, Town04, Town05) and saving every i-th frame.\nThe labels where then automatically generated using the semantic segmentation information.\n",
+    "description": "This dataset contains publically accessible URLs for 1028 images, each 640x380 pixels. The dataset is split into 249 test and 779 training examples. The dataset was collected in Carla Simulator, driving around in autopilot mode in various environments (Town01, Town02, Town03, Town04, Town05) and saving every i-th frame. The labels where then automatically generated using the semantic segmentation information.",
     "citation": "",
     "homepage": "https://github.com/yunusskeete/Carla-COCO-Object-Detection-Dataset",
     "license": "MIT",

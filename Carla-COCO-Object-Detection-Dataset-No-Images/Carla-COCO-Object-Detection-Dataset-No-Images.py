@@ -41,10 +41,10 @@ _HOMEPAGE = "https://github.com/yunusskeete/Carla-COCO-Object-Detection-Dataset"
 
 _LICENSE = "MIT"
 
-_URL = "https://github.com/yunusskeete/Carla-COCO-Object-Detection-Dataset/raw/master/"
+_URL = "https://github.com/yunusskeete/Carla-COCO-Object-Detection-Dataset/raw/master/Carla-COCO-Object-Detection-Dataset-No-Images/"
 _URLS = {
-    "train": _URL + "train.tar.gz",
-    "test": _URL + "test.tar.gz",
+    "train": _URL + "train/train.tar.gz",
+    "test": _URL + "test/test.tar.gz",
 }
 
 _CATEGORIES = ["automobile", "bike", "motorbike", "traffic_light", "traffic_sign"]
